@@ -39,4 +39,4 @@ jobs:
 
       - name: Build and test jpf-nhandler
         run:
-          ./gradlew clean check
+          ./gradlew check
