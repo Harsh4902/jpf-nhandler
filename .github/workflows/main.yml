@@ -32,10 +32,7 @@ jobs:
         run:
           mkdir $HOME/.jpf;
           echo "jpf-core = ${HOME}/work/jpf-nhandler/jpf-core" >> $HOME/.jpf/site.properties;
-          echo "jpf-numeric = ${HOME}/work/jpf-nhandler/jpf-numeric" >> $HOME/.jpf/site.properties;
-          echo "jpf-aprop = ${HOME}/work/jpf-nhandler/jpf-aprop" >> $HOME/.jpf/site.properties;
-          echo "extensions=${HOME}/work/jpf-nhandler/jpf-core,${HOME}/work/jpf-nhandler/jpf-aprop" >> $HOME/.jpf/site.properties;
-          echo "jpf-nhandler = ${HOME}/work/jpf-nhandler/jpf-nhandler" >> $HOME/.jpf/site.properties
+          echo "extensions=${HOME}/work/jpf-nhandler/jpf-core" >> $HOME/.jpf/site.properties;
 
       - name: Build and test jpf-nhandler
         run:
